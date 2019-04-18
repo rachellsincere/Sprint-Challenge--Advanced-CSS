@@ -1,1 +1,30 @@
 // Mixins Here
+
+.nav-menu-display() {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;  
+}
+
+.nav-link() {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: @nav-font;
+}
+
+.button(@text-color, @bg-color) {
+    width: 30%;
+    color: @text-color;
+    background-color: @bg-color;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: @text-color;
+        color: @bg-color;
+    }
+} 
